@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <Platforms>AnyCPU;x86</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Model\engine.gltf" />
+    <None Remove="Model\Telescope.gltf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Model\engine.gltf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Telescope.gltf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.18362.2005" />
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.0.0-preview9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EngineComponent\EngineComponent.csproj" />
+    <ProjectReference Include="..\ModernWpfDemo.UWP\ModernWpfDemo.UWP.csproj" />
+  </ItemGroup>
+</Project>
