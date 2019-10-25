@@ -4,10 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModernWpfDemo"
-        xmlns:xamlhost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
         mc:Ignorable="d"
         Title="Telescope" Height="600" Width="1000">
     <Grid>
-        <xamlhost:WindowsXamlHost InitialTypeName="EngineComponent.EngineModel" ChildChanged="WindowsXamlHost_ChildChanged" />
+        <!--<xamlhost:WindowsXamlHost InitialTypeName="EngineComponent.EngineModel" ChildChanged="WindowsXamlHost_ChildChanged" />-->
     </Grid>
 </Window>

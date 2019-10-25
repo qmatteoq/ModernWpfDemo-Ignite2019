@@ -23,13 +23,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.18362.2005" />
-    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.0.0-preview9.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EngineComponent\EngineComponent.csproj" />
-    <ProjectReference Include="..\ModernWpfDemo.UWP\ModernWpfDemo.UWP.csproj" />
-  </ItemGroup>
 </Project>

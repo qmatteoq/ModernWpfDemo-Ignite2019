@@ -1,6 +1,4 @@
-﻿using EngineComponent;
-using Microsoft.Toolkit.Wpf.UI.XamlHost;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -24,12 +22,12 @@ namespace ModernWpfDemo
             InitializeComponent();
         }
 
-        private void WindowsXamlHost_ChildChanged(object sender, EventArgs e)
-        {
-            if (sender is WindowsXamlHost windowsXamlHost && windowsXamlHost.Child is EngineModel engineModel)
-            {
-                engineModel.ModelUrl = new Uri("ms-appx:///Model/Telescope.gltf");
-            }
-        }
+        //private void WindowsXamlHost_ChildChanged(object sender, EventArgs e)
+        //{
+        //    if (sender is WindowsXamlHost windowsXamlHost && windowsXamlHost.Child is EngineModel engineModel)
+        //    {
+        //        engineModel.ModelUrl = new Uri("ms-appx:///Model/Telescope.gltf");
+        //    }
+        //}
     }
 }
